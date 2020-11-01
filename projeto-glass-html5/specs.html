@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Seção Comportamental, nada que estiver aqui aparece na página--> 
+    <head>
+        <meta charset="utf-8">
+        <title>Especificações</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/specs.css">
+    </head>
+    <script src="_javascript/funcoes.js"></script>
+    <!--Essa é a parte q vai aparecer na página-->
+    <body>
+        <div id="interface"> <!--Isso significa uma divisão na página-->
+            <header id="cabecalho">
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+                <img id="icone" src="_imagens/especificacoes.png">
+                <nav id="menu" onmouseout="volta('especificacoes')">                   
+                    <h1>Menu Principal</h1>
+                    <ul> <!--Unordered List-->  <!--Temos tbm a Ordered List: "<ol>"-->
+                        <li onmouseover="mudaFoto('home')" ><a href="index.html">Home</a></li><!-- "<li>" = List Item-->
+                        <li onmouseover="mudaFoto('especificacoes')"><a href="specs.html">Especificações</a></li>
+                        <li onmouseover="mudaFoto('fotos')"><a href="fotos.html">Fotos</a></li><!--"<a>" = é uma ancora para um link-->
+                        <li onmouseover="mudaFoto('multimidia')"><a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('contato')"><a href="fale-conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="corpo-full">
+                <h3 class="esquerda">Glass > Especificações</h3>     
+                <h1>Raio-X no Google Glass</h1> <!-- "<br/>" = Quebra de linha-->
+                <h2 class="esquerda">por <b>Gustavo Guanabara</b></h2>            <!--"<b>" = Negrito-->
+                <h3 class="direita">Atualizado em <i>23/Abril/2013</i> </h3>     <!--"<i>" = Itálico-->
+
+                <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+                <section id="conteudo">
+                    <img src="_imagens\glass-esquema-marcado.jpg" usemap="#meumapa">
+                    <map name="meumapa">
+                        <area shape="rect" coords="180,257,267,201" href="google-glass.html#tela" target="janela">
+                        <area shape="circle" coords="158,242,11" href="google-glass.html#camera" target="janela">
+                        <area shape="poly" coords="27,142,81,211,82,249,25,168" href="google-glass.html#sensores" target="janela">
+                        <area shape="circle" coords="77,50,13" href="google-glass.html#gadgets" target="janela">
+                    </map>
+                    <iframe src="google-glass.html" name="janela" id="frame-spec" scrolling="no"></iframe>
+                </section>
+            </section>
+        </div>
+    </body>
+    <footer id="rodape">
+        <p>Copyright 2013 - by Gustavo Guanabara<br/>
+        <a href="https://www.facebook.com/joabe.ferreira.5492" target="_blank">Facebook</a> | 
+        <a href="https://canalcienciascriminais.jusbrasil.com.br/artigos/518445952/sim-pedofilia-nao-e-crime" target="_blank">Twitter</a></p>
+    </footer>
+</html>

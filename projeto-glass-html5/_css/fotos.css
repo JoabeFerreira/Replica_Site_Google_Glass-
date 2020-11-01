@@ -1,0 +1,86 @@
+@charset "utf-8";
+#album{
+    width: 700px; /*largura*/
+    margin: 0 auto; /*0 na esquerda automatica no resto*/
+    padding: 50px;
+    list-style: none;/*tira as bolinha dos itens*/
+    overflow: hidden;
+}
+
+#album li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: white solid 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transition: all 0.3s ease-in;
+}
+
+#album li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+#album li:hover span{
+    opacity: 1;
+}
+#album li:hover{
+    -webkit-transform: scale(1.5);
+}
+
+#album li span#hover{
+    opacity: 1;
+}
+
+#album li#f1{
+    background: url('../_imagens/galeria-01.jpg') no-repeat;
+    background-position: 50% 50%; /* 50% horizontal 50% vertival, ou seja, vai centralizar*/
+    background-size: 400px 400px; 
+}
+#album li#f1:hover{
+    background-position: 0px 0px; 
+    background-size: 200px 200px; 
+}
+#album li#f2{
+    background: url('../_imagens/galeria-02.jpg') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 400px 400px; 
+}
+
+#album li#f2:hover{
+    background-position: 0px 0px; 
+    background-size: 200px 200px; 
+}
+
+#album li#f3{
+    background: url('../_imagens/galeria-03.jpg') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 400px 400px; 
+}
+#album li#f3:hover{
+    background-position: 0px 0px; 
+    background-size: 200px 200px; 
+}
+#album li#f4{
+    background: url('../_imagens/galeria-04.jpg') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 400px 400px; 
+}
+#album li#f4:hover{
+    background-position: 0px 0px; 
+    background-size: 200px 200px; 
+}
+#album li#f5{
+    background: url('../_imagens/galeria-05.jpg') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 400px 400px; 
+}
+#album li#f5:hover{
+    background-position: 0px 0px; 
+    background-size: 200px 200px; 
+}

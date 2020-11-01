@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Seção Comportamental, nada que estiver aqui aparece na página--> 
+    <head>
+        <meta charset="utf-8">
+        <title>Tudo sobre o Google Glass</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/media.css">
+    </head>
+    <script src="_javascript/funcoes.js"></script>
+    <!--Essa é a parte q vai aparecer na página-->
+    <body>
+        <div class="retangulo"></div>
+        <div id="interface"> <!--Isso significa uma divisão na página-->
+            <header id="cabecalho">
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+                <img id="icone" src="_imagens/multimidia.png">
+                <nav id="menu" onmouseout="volta('multimidia')">                   
+                    <h1>Menu Principal</h1>
+                    <ul> <!--Unordered List-->  <!--Temos tbm a Ordered List: "<ol>"-->
+                        <li onmouseover="mudaFoto('home')" ><a href="index.html">Home</a></li><!-- "<li>" = List Item-->
+                        <li onmouseover="mudaFoto('especificacoes')"><a href="specs.html">Especificações</a></li>
+                        <li onmouseover="mudaFoto('fotos')"><a href="fotos.html">Fotos</a></li><!--"<a>" = é uma ancora para um link-->
+                        <li onmouseover="mudaFoto('multimidia')"><a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('contato')"><a href="fale-conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <section id="corpo-full">
+            <h3 class="esquerda">Glass > Multimídia</h3>
+            <h1>Sons e Vídeos</h1> <!-- "<br/>" = Quebra de linha-->
+            <h2 class="esquerda">por <b>Gustavo Guanabara</b></h2>            <!--"<b>" = Negrito-->
+            <h3 class="direita">Atualizado em <i>01/Maio/2013</i> </h3>
+
+           <div id="tv-radio">
+                <audio id="musica" controls="controls">
+                    <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"> 
+                </audio>
+                <iframe id="filme" width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+        </section>
+
+    <footer id="rodape">
+        <p>Copyright 2013 - by Gustavo Guanabara<br/>
+        <a href="https://www.facebook.com/joabe.ferreira.5492" target="_blank">Facebook</a> | 
+        <a href="https://canalcienciascriminais.jusbrasil.com.br/artigos/518445952/sim-pedofilia-nao-e-crime" target="_blank">Twitter</a></p>
+    </footer>
+</div>
+
+</body>
+
+</html>

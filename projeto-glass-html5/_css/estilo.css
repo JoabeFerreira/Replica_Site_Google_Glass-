@@ -1,0 +1,233 @@
+/* O estilo q estiver aqui se aplicará pra todas as tags desse tipo */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* ----------------------------GERAL---------------------------- */
+p 
+{
+    text-align: justify;
+    text-indent: 50px;
+    font-family: 'Roboto', sans-serif;    
+}
+
+body
+{
+    
+    /* background-color: #4287f5; Modo HEXADECIMAL(Antigo) */
+    background-color: rgb(240, 112, 195); /*Para pesquisar as cores: "color picker" no Google*/
+    color: black; /*Cor da fonte*/
+    background-image: url("fundo.png");
+    
+}
+
+h1
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bolder;
+    font-size: 22pt;
+}
+
+h2, h3
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18pt;
+}
+
+/* ----------------------------Cabeçalho---------------------------- */
+#cabecalho
+{
+    border-bottom: 1px black solid; /* Espessura Cor Formato*/
+    height: 165px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 0px; /*Imagem Repetição Horizontal Vertical*/ 
+}
+
+#cabecalho h1
+{
+    position: absolute;
+    top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50pt;
+}
+
+#cabecalho h2
+{
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    top: 120px;
+    
+}
+
+/* ----------------------------INTERFACE---------------------------- */
+#interface
+{
+    width: 950px;
+    padding: 10px; /*Representa o valor dos 4 lados*/
+    margin: -10px auto 0px auto; /*cima direita baixo esquerda*/
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px black;
+    
+}
+
+/* ----------------------------IMAGEM---------------------------- */
+.foto-legenda /*Sempre que quiser se referir a uma classe usar "." na frente*/
+{
+    position: relative; /*relativo ao lugar q ele foi posto no HTML*/
+    border: 5px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+.foto-legenda img /*classe=foto-legenda   elemento=img*/
+{
+    width: 100%;
+    height: 100%;
+}
+
+.foto-legenda figcaption
+{
+    position: absolute; /*dentro do container(dentro do .foto-legenda)*/
+    opacity: 0;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.4); /*ultimo elemento do rgba é a OPACIDADE*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.foto-legenda:hover figcaption /*":hover" Ativa quando passa o mouse em cima*/
+{
+    opacity: 1;
+}
+
+/* ----------------------------MENU---------------------------- */
+#menu
+{
+    display: block;
+}
+
+#menu ul/*Sempre que quiser se referir a um ID usar "#" na frente*/
+{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+
+#menu li
+{
+    border: 2px solid white;
+    /* border-radius: 25px; */
+    display: inline-block; /*Deixa o menu alinhado um do lado do outro*/
+    background-color: rgb(50, 168, 111); /*Muda a cor do quadradinho*/
+    color: white;
+    padding: 10px; /*tamanho do quadradinho em volta da escrita*/
+    margin-right: 10px; /*Margem fora do quadradinho*/
+    transition: 0.4s;
+    font-family: 'Roboto', sans-serif; 
+    font-size: medium;
+}
+
+#menu li:hover
+{
+    background-color: white;
+    border: 2px solid rgb(50, 168, 111);
+}
+
+#menu h1{display: none; /*Esconde o elemento*/}
+
+#menu a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover{color: rgb(50, 168, 111);}
+
+#icone
+{
+    position: absolute;
+    left: 930px;
+    top: 70px;
+} 
+
+/* ----------------------------DIVISÕES---------------------------- */
+#corpo
+{
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px black solid;
+    padding-right: 15px;
+}
+
+.direita{ 
+    text-align: right;
+    font-size: 14pt;
+}
+.esquerda{ 
+    font-size: 14pt;
+}
+
+#lateral
+{
+    display: block;
+    width: 350px;
+    float: right;
+    margin-right: 50px;
+}
+
+#rodape
+{
+    clear: both;
+    border-top: 1px black solid;
+}
+
+#rodape p {text-align: center;}
+
+#rodape a
+{
+    text-decoration: none;
+    color: black;    
+}
+
+#rodape a:hover{font-weight: bold;} /*Negrito*/
+
+/* ----------------------------TABELA---------------------------- */
+
+#tabela
+{
+    border: 1px black solid;
+    border-spacing: 0px;
+    margin: auto;
+    
+    
+}
+
+#tabela td
+{
+    border: 1px black solid;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+#tabela td.colEsq
+{
+    color: white;
+    background-color: gray;
+}
+
+#tabela td.colDir
+{
+    background-color: white;
+}
+
+#tabela caption{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
